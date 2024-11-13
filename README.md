@@ -37,7 +37,7 @@
 获取你的Bearer令牌：
 
 1. **注册一个Nodepay帐户**：
-   - 前往[Nodepay注册页面](https://app.nodepay.ai/register?ref=3WZFKKi0Hbvi1sd)并注册一个帐户。
+   - 前往[Nodepay注册页面](https://app.nodepay.ai/register?ref=Pf4yQYI8sYwLNT5)并注册一个帐户。
 
 2. **获取你的令牌**：
    - 在浏览器中打开**开发者工具**（右键 > 检查 或按 `Ctrl+Shift+I`）。
