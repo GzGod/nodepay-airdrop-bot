@@ -1,55 +1,59 @@
+好的，让我们将这个README文件翻译成中文。
+
+---
+
 # nodepay-airdrop-bot
 
-A bot for automating Nodepay airdrop interactions, including session management and pinging with flexible connection options (proxy or direct).
+一个用于自动化Nodepay空投交互的机器人，包括会话管理和具有灵活连接选项（代理或直接）的ping操作。
 
-## Requirements
+## 需求
 
-1. **Node.js** (version 14 or higher)
-2. **npm** (Node package manager)
+1. **Node.js** (版本 14 或更高)
+2. **npm** (Node 包管理器)
 
-## Installation
+## 安装
 
-To get started with the Nodepay Airdrop Bot:
+要开始使用Nodepay Airdrop Bot：
 
-1. Clone the repository:
+1. 克隆仓库：
 
     ```bash
-    git clone https://github.com/dante4rt/nodepay-airdrop-bot.git
+    git clone https://github.com/Gzgod/nodepay-airdrop-bot.git
     cd nodepay-airdrop-bot
     ```
 
-2. Install the dependencies:
+2. 安装依赖项：
 
     ```bash
     npm install
     ```
 
-## Configuration
+## 配置
 
-Before running the bot, you need to set up your configuration:
+在运行机器人之前，你需要进行配置：
 
-### 1. `token.txt` (Required)
+### 1. `token.txt` (必需)
 
-To get your Bearer token:
+获取你的Bearer令牌：
 
-1. **Register for a Nodepay account**:
-   - Go to [Nodepay Registration Page](https://app.nodepay.ai/register?ref=3WZFKKi0Hbvi1sd) and sign up for an account.
+1. **注册一个Nodepay帐户**：
+   - 前往[Nodepay注册页面](https://app.nodepay.ai/register?ref=3WZFKKi0Hbvi1sd)并注册一个帐户。
 
-2. **Get your token**:
-   - Open **DevTools** in your browser (right-click > Inspect or press `Ctrl+Shift+I`).
-   - Go to the **Console** tab in DevTools.
-   - Type the following command to get your token:
+2. **获取你的令牌**：
+   - 在浏览器中打开**开发者工具**（右键 > 检查 或按 `Ctrl+Shift+I`）。
+   - 在开发者工具中转到**控制台**选项卡。
+   - 输入以下命令以获取你的令牌：
 
      ```javascript
      localStorage.getItem('np_webapp_token')
      ```
 
-   - This will return the Bearer token. **Copy the token** (without the `Bearer` prefix, just the alphanumeric string).
+   - 这将返回Bearer令牌。**复制令牌**（不包括`Bearer`前缀，只是字母数字字符串）。
 
-3. **Paste the token in `token.txt`**:
-   - Create a `token.txt` file in the root of your project and paste your token in the file (one token per line).
+3. **将令牌粘贴到 `token.txt` 中**：
+   - 在项目根目录中创建一个`token.txt`文件，并将你的令牌粘贴到文件中（每行一个令牌）。
 
-Example `token.txt`:
+示例 `token.txt`：
 
 ```text
 ey...
@@ -57,17 +61,17 @@ ey...
 ey...
 ```
 
-### 2. `proxy.txt` (Optional)
+### 2. `proxy.txt` (可选)
 
-Only required if you choose to use proxies when running the bot.
+仅在你选择使用代理运行机器人时需要。
 
-- Add your proxy details in `proxy.txt`. Each line should have the format:
+- 在 `proxy.txt` 中添加你的代理详细信息。每行应具有以下格式：
 
   ```text
   host:port:username:password
   ```
 
-- Example:
+- 示例：
 
   ```text
   123.45.67.89:8080:username:password
@@ -75,52 +79,56 @@ Only required if you choose to use proxies when running the bot.
   123.45.67.89:8080:username:password
   ```
 
-## Running the Bot
+## 运行机器人
 
-To start the bot, run the following command:
+要启动机器人，运行以下命令：
 
 ```bash
 npm start
 ```
 
-When you start the bot, you'll be prompted to:
+启动机器人后，你将被提示：
 
-1. Choose whether to use proxies or direct connection
-2. Select between single or multiple account mode
+1. 选择使用代理还是直接连接
+2. 选择单账户模式还是多账户模式
 
-### Connection Modes
+### 连接模式
 
-1. **Proxy Mode**
-   - Requires valid `proxy.txt` file
-   - Uses different IP addresses for connections
-   - Better for running multiple accounts
-   - More anonymous operation
+1. **代理模式**
+   - 需要有效的 `proxy.txt` 文件
+   - 使用不同的IP地址进行连接
+   - 更适合运行多个账户
+   - 操作更匿名
 
-2. **Direct Mode**
-   - No proxy configuration needed
-   - Uses your device's IP address
-   - Simpler setup
-   - Good for single account usage
+2. **直接模式**
+   - 不需要代理配置
+   - 使用你设备的IP地址
+   - 设置更简单
+   - 适合单账户使用
 
-## Logs
+## 日志
 
-The bot will log all activity, including:
+机器人将记录所有活动，包括：
 
-- Connection status for each session (UID)
-- Ping status for each session
-- Connection type (proxy/direct) used
-- IP address information (when using proxies)
+- 每个会话（UID）的连接状态
+- 每个会话的ping状态
+- 使用的连接类型（代理/直接）
+- IP地址信息（使用代理时）
 
-Logs are stored in `bot.log` and can also be seen in the console.
+日志存储在 `bot.log` 中，也可以在控制台中查看。
 
-## Donations
+## 捐赠
 
-If you would like to support the development of this project, you can make a donation using the following addresses:
+如果你想支持这个项目的发展，可以使用以下地址进行捐赠：
 
 - **Solana**: `GLQMG8j23ookY8Af1uLUg4CQzuQYhXcx56rkpZkyiJvP`
 - **EVM**: `0x960EDa0D16f4D70df60629117ad6e5F1E13B8F44`
 - **BTC**: `bc1p9za9ctgwwvc7amdng8gvrjpwhnhnwaxzj3nfv07szqwrsrudfh6qvvxrj8`
 
-## License
+## 许可证
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+此项目根据MIT许可证授权 - 详情请参阅 [LICENSE](LICENSE) 文件。
+
+---
+
+希望这个翻译对你有帮助！如果你有其他问题，请随时告诉我。
