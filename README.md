@@ -1,6 +1,4 @@
-好的，让我们将这个README文件翻译成中文。
 
----
 
 # nodepay-airdrop-bot
 
@@ -129,6 +127,3 @@ npm start
 
 此项目根据MIT许可证授权 - 详情请参阅 [LICENSE](LICENSE) 文件。
 
----
-
-希望这个翻译对你有帮助！如果你有其他问题，请随时告诉我。
